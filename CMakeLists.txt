@@ -137,6 +137,10 @@ pkg_check_modules(
   libcrypto
 )
 
+add_definitions(
+  -fPIC
+)
+
 if("${WITH_PROCPS}")
   pkg_check_modules(
     PROCPS
